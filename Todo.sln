@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todo.Domain.Api", "Todo.Dom
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todo.Domain.Tests", "Todo.Domain.Tests\Todo.Domain.Tests.csproj", "{430E6AB0-B88D-4E60-BDE0-90AE1C6451C4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{F5C730BC-AE5E-4FCA-80EC-93BEDE382D2F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +38,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{93A12A08-FA4B-4434-8F51-477406193D3E} = {F5C730BC-AE5E-4FCA-80EC-93BEDE382D2F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C3D7C8DC-19E0-46F4-B0A3-0CF292F72F48}

@@ -1,11 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.Diagnostics.CodeAnalysis;
 
-namespace Domain.Todo.Domain.Entities
+namespace Todo.Domain.Entities
 {
-    public abstract class Entity
+    //IEquatable - permite realizar comparações entre um ou mais objetos do mesmo tipo
+    public abstract class Entity : IEquatable<Entity>
     {
+        public Guid Id { get; private set; }
 
+        public Entity()
+        {
+            Id = Guid.NewGuid();
+        }
+
+        public bool Equals(Entity other)
+        {
+            return Id == other.Id;
+        }
     }
 }
