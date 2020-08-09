@@ -16,5 +16,20 @@ namespace Todo.Domain.Entities
             Date = date;
             User = user;
         }
+
+        public void MarkAsDone()
+        {
+            Done = true;
+        }
+
+        public void MarkAsUndone()
+        {
+            Done = false;
+        }
+
+        public void UpdateTitle(string title)
+        {
+            Title = title;
+        }
     }
 }
